@@ -1,0 +1,191 @@
+[
+  
+  {
+    "title": "How to fix incorrect locale",
+    "url": "/posts/how-to-fix-incorrect-locale/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-10-13 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "Can’t set locale; make sure $LC_* and $LANG are correct!perl: warning: Setting locale failed.perl: warning: Please check that your locale settings:\tLANGUAGE = \"en_US:en\",\tLC_ALL = (unset),\tLC_TIME ...",
+    "content": "Can’t set locale; make sure $LC_* and $LANG are correct!perl: warning: Setting locale failed.perl: warning: Please check that your locale settings:\tLANGUAGE = \"en_US:en\",\tLC_ALL = (unset),\tLC_TIME = \"uk_UA.UTF-8\",\tLC_MONETARY = \"uk_UA.UTF-8\",\tLC_ADDRESS = \"uk_UA.UTF-8\",\tLC_TELEPHONE = \"uk_UA.UTF-8\",\tLC_NAME = \"uk_UA.UTF-8\",\tLC_MEASUREMENT = \"uk_UA.UTF-8\",\tLC_IDENTIFICATION = \"uk_UA.UTF-8\",\tLC_NUMERIC = \"uk_UA.UTF-8\",\tLC_PAPER = \"uk_UA.UTF-8\",\tLANG = \"en_US.UTF-8\"    are supported and installed on your system.perl: warning: Falling back to a fallback locale (\"en_US.UTF-8\").apt-listchanges: Can't set locale; make sure $LC_* and $LANG are correct!just runsudo dpkg-reconfigure locales"
+  },
+  
+  {
+    "title": "How to start up docker compose on boot",
+    "url": "/posts/how-to-start-up-docker-compose-on-boot/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-10-08 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "For example, we have /opt/myapp/docker-compose.yml1) Create /etc/systemd/system/docker-compose-myapp.service[Unit]Description=Docker Compose Application ServiceRequires=docker.serviceAfter=docker.s...",
+    "content": "For example, we have /opt/myapp/docker-compose.yml1) Create /etc/systemd/system/docker-compose-myapp.service[Unit]Description=Docker Compose Application ServiceRequires=docker.serviceAfter=docker.service[Service]WorkingDirectory=/opt/myappExecStart=/usr/bin/docker compose upExecStop=/usr/bin/docker compose downTimeoutStartSec=0Restart=on-failureStartLimitIntervalSec=60StartLimitBurst=3[Install]WantedBy=multi-user.targetsystemctl enable docker-compose-appsystemctl start docker-compose-app"
+  },
+  
+  {
+    "title": "How to configure NFS server/client",
+    "url": "/posts/how-to-configure-nfs-server-client/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-10-01 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "Serversudo apt-get update sudo apt-get install nfs-kernel-server sudo mkdir /nfs_sharesudo chown nobody:nogroup /nfs_share sudo chmod 777 /nfs_share Configure NFS share folder(/etc/exports)/nfs_sha...",
+    "content": "Serversudo apt-get update sudo apt-get install nfs-kernel-server sudo mkdir /nfs_sharesudo chown nobody:nogroup /nfs_share sudo chmod 777 /nfs_share Configure NFS share folder(/etc/exports)/nfs_share 192.168.1.10(rw,sync,no_subtree_check)192.168.1.10 - ip of NFS client####export, enable and start NFS sharesudo exportfs -asudo systemctl enable nfs-kernel-server sudo systemctl start nfs-kernel-serverClientMount the NFS Share on the Client Machinesudo mkdir /mnt/nfs_sharesudo mount -t nfs 192.168.1.100:/nfs_share /mnt/nfs_share  Configure the NFS Share to Auto-Mount at Boot Time(/etc/fstab)\t192.168.1.100:/nfs_share /mnt/nfs_share nfs defaults 0 0"
+  },
+  
+  {
+    "title": "How to install and configure MySql Server",
+    "url": "/posts/how-to-install-and-configure-mysql-server/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-08-19 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "Install MySql Serversudo apt install mysql-serverConfigure MySql ServerOpen Mysql consolesudo mysqlSet root passwordALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'...",
+    "content": "Install MySql Serversudo apt install mysql-serverConfigure MySql ServerOpen Mysql consolesudo mysqlSet root passwordALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';Allow use default authentication methodALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;Run the security scriptsudo mysql_secure_installationCreating a MySql UserCREATE USER 'username'@'host' IDENTIFIED BY 'password';Grant the appropriate privilegesGRANT ALL PRIVILEGES ON database.table TO 'username'@'host';Flush privilegesFLUSH PRIVILEGES;Check Mysqlsystemctl status mysql.service"
+  },
+  
+  {
+    "title": "How to install specific Mysql version",
+    "url": "/posts/how-to-install-specific-mysql-version/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-08-18 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "For example, we should install Mysql version 8.0.341) Check versionapt-cache policy mysql-servermysql-server:  Installed: 8.0.34-0ubuntu0.20.04.1  Candidate: 8.0.34-0ubuntu0.20.04.1  Version table:...",
+    "content": "For example, we should install Mysql version 8.0.341) Check versionapt-cache policy mysql-servermysql-server:  Installed: 8.0.34-0ubuntu0.20.04.1  Candidate: 8.0.34-0ubuntu0.20.04.1  Version table: *** 8.0.34-0ubuntu0.20.04.1 500        500 http://ua.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages        500 http://ua.archive.ubuntu.com/ubuntu focal-security/main amd64 Packages        100 /var/lib/dpkg/status     8.0.19-0ubuntu5 500        500 http://ua.archive.ubuntu.com/ubuntu focal/main amd64 Packages2) Install mysql of specific versionsudo apt install mysql-server=8.0.34-0ubuntu0.20.04.1"
+  },
+  
+  {
+    "title": "Postgres",
+    "url": "/posts/postgres/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-08-07 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "Install PostgreSqlsudo apt install postgresqlCreate new Rolecreate role user;Show all roles\\duChange attributes on existing rolesALETR ROLE \"user\" WITH LOGIN CREATEDB;Change role passwordShow all d...",
+    "content": "Install PostgreSqlsudo apt install postgresqlCreate new Rolecreate role user;Show all roles\\duChange attributes on existing rolesALETR ROLE \"user\" WITH LOGIN CREATEDB;Change role passwordShow all databaseALTER ROLE \"user\" WITH PASSWORD 'password';Set password for postgres usersudo -u postgres psqland\\passwordEnable remote access to Postgres  Modify the PostgreSQL configuration file    sudo nano /etc/postgresql/12/main/postgresql.conf        Then, find the line #listen_addresses = 'localhost' and uncomment it next, change the value of listen_addresses to *.    Modify the pg_hba.conf filesudo nano /etc/postgresql/12/main/pg_hba.confappend next linehost    all             all             0.0.0.0/0            md5  Restart PostgreSQL    sudo service postgresql restart      Connect to remove postgres serverpsql postgres://user:password@ip_add_or_domain:port/db_nameorpsql -h &lt;REMOTE HOST&gt; -p &lt;REMOTE PORT&gt; -U &lt;DB_USER&gt; &lt;DB_NAME&gt; -W-W option will prompt for passwordcheck port# sudo netstat -peanut | grep \"postgres\"tcp        0      0 0.0.0.0:5432            0.0.0.0:*               LISTEN      123        614086     92337/postgres      tcp6       0      0 :::5432                 :::*                    LISTEN      123        614087     92337/postgres      udp        0      0 127.0.0.1:41721         127.0.0.1:41721         ESTABLISHED 123        614090     92337/postgres  Change PostgreSQL user passwordALTER USER user_name WITH PASSWORD 'new_password';"
+  },
+  
+  {
+    "title": "Install and configure Mysql Server",
+    "url": "/posts/install-and-configure-mysql-server/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-06-06 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "Install",
+    "content": "Install"
+  },
+  
+  {
+    "title": "Basic Auth in Nginx",
+    "url": "/posts/basic-auth-nginx/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-06-03 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "server {    server_name site.com;    location / {        ...\t      auth_basic           \"Administrator Area\";        auth_basic_user_file /etc/nginx/protections/site.com.htpasswd;        ...    }}I...",
+    "content": "server {    server_name site.com;    location / {        ...\t      auth_basic           \"Administrator Area\";        auth_basic_user_file /etc/nginx/protections/site.com.htpasswd;        ...    }}Installsudo apt-get install apache2-utilsand create new password file and set password for user adminhtpasswd -c site.com.htpasswd admin"
+  },
+  
+  {
+    "title": "Roundcubemail in Docker",
+    "url": "/posts/roundcubemail-in-docker/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-06-01 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "docker-compose.yamlversion: '2'services:  roundcubemail:    image: roundcube/roundcubemail:latest    restart: always    volumes:      - ./db/sqlite:/var/roundcube/db      - /data/roundcubemail-dock...",
+    "content": "docker-compose.yamlversion: '2'services:  roundcubemail:    image: roundcube/roundcubemail:latest    restart: always    volumes:      - ./db/sqlite:/var/roundcube/db      - /data/roundcubemail-docker/config.custom.inc.php:/var/roundcube/config/config.custom.inc.php    ports:      - 9002:80    environment:      - ROUNDCUBEMAIL_DB_TYPE=sqlite      - ROUNDCUBEMAIL_SKIN=elastic      - ROUNDCUBEMAIL_DEFAULT_PORT=993      - ROUNDCUBEMAIL_DEFAULT_HOST=ssl://192.168.1.1      - ROUNDCUBEMAIL_SMTP_SERVER=tls://192.168.1.1config.custom.inc.php&lt;?php  $config['db_dsnw'] = 'sqlite:////var/roundcube/db/sqlite.db?mode=0646';  $config['db_dsnr'] = '';  $config['imap_host'] = 'ssl://192.168.1.1:993';  $config['smtp_host'] = 'tls://192.168.1.1:587';  $config['temp_dir'] = '/tmp/roundcube-temp';  $config['skin'] = 'elastic';  $config['request_path'] = '/';  $config['plugins'] = array_filter(array_unique(array_merge($config['plugins'], ['archive', 'zipdownload'])));  $config['imap_conn_options'] = ['ssl' =&gt; ['verify_peer' =&gt; false, 'verify_peer_name' =&gt; false]];  $config['smtp_conn_options'] = ['ssl' =&gt; ['verify_peer' =&gt; false, 'verify_peer_name' =&gt; false]];"
+  },
+  
+  {
+    "title": "How to change Grafana admin password",
+    "url": "/posts/how-to-change-grafana-admin-password/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-06-01 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "grafana-cli admin reset-admin-password &lt;new password&gt;",
+    "content": "grafana-cli admin reset-admin-password &lt;new password&gt;"
+  },
+  
+  {
+    "title": "How to migrate LXC(.raw) to KVM(.qcow2)",
+    "url": "/posts/how-to-migrate-raw-to-qcow2/",
+    "categories": "",
+    "tags": "",
+    "date": "2023-05-31 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "To migrate your LXC virtual server to a KVM just follow these steps:For example, we have image.raw based on Ubuntu 18.04.6We installed a KVM machine with the same operating system, in my case it wa...",
+    "content": "To migrate your LXC virtual server to a KVM just follow these steps:For example, we have image.raw based on Ubuntu 18.04.6We installed a KVM machine with the same operating system, in my case it was KVM server with ssh access to 192.168.1.11) mount image.raw like next:mount ./image.raw /mnt/root3) sync the LXC to the new KVM serverrsync --exclude=/etc/fstab --exclude=/boot --exclude=/proc --exclude=/lib/modules/ --exclude=/etc/udev --exclude=/lib/udev --exclude=/sys -e ssh --delete --numeric-ids -avpogtStlHz /mnt/root/ root@192.168.1.1:/"
+  }
+  
+]
+
