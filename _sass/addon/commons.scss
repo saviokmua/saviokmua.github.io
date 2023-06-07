@@ -4,6 +4,7 @@
 
 html {
   @media (prefers-color-scheme: light) {
+    font-size: 16px;
     &:not([data-mode]),
     &[data-mode='light'] {
       @include light-scheme;
@@ -15,6 +16,7 @@ html {
   }
 
   @media (prefers-color-scheme: dark) {
+    font-size: 16px;
     &:not([data-mode]),
     &[data-mode='dark'] {
       @include dark-scheme;
@@ -25,7 +27,6 @@ html {
     }
   }
 
-  font-size: 16px;
 }
 
 body {

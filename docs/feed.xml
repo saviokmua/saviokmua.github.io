@@ -1,0 +1,259 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>RubyDev</title>
+  <subtitle>Personal block on Ruby programming and IT/Network technologies</subtitle>
+  <updated>2024-10-25T23:34:32+03:00</updated>
+  <author>
+    <name>Oleksandr Matkovskyi</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
+  <rights> © 2024 Oleksandr Matkovskyi </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>How to fix incorrect locale1</title>
+    <link href="http://localhost:4000/posts/how-to-fix-incorrect-locale/" rel="alternate" type="text/html" title="How to fix incorrect locale1" />
+    <published>2023-10-13T00:00:00+03:00</published>
+  
+    <updated>2023-10-13T00:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/how-to-fix-incorrect-locale/</id>
+    <content src="http://localhost:4000/posts/how-to-fix-incorrect-locale/" />
+    <author>
+      <name>alex</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Can’t set locale; make sure $LC_* and $LANG are correct!
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US:en",
+	LC_ALL = (unset),
+	LC_TIME = "uk_UA.UTF-8",
+	LC_MONETARY = "uk_UA.UTF-8",
+	LC_ADDRESS = "uk_UA.UTF-8",
+	LC_TELEPHONE = "uk_UA.UTF-8",
+	LC_NAME = "uk_UA.UTF-8",
+	LC_MEASUREMENT = "uk_UA.UTF-8",
+	LC_IDENTIFICATION = "uk_UA....
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>How to start up docker compose on boot</title>
+    <link href="http://localhost:4000/posts/how-to-start-up-docker-compose-on-boot/" rel="alternate" type="text/html" title="How to start up docker compose on boot" />
+    <published>2023-10-08T00:00:00+03:00</published>
+  
+    <updated>2023-10-08T00:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/how-to-start-up-docker-compose-on-boot/</id>
+    <content src="http://localhost:4000/posts/how-to-start-up-docker-compose-on-boot/" />
+    <author>
+      <name>alex</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      For example, we have /opt/myapp/docker-compose.yml
+
+1) Create /etc/systemd/system/docker-compose-myapp.service
+[Unit]
+Description=Docker Compose Application Service
+Requires=docker.service
+After=docker.service
+[Service]
+WorkingDirectory=/opt/myapp
+ExecStart=/usr/bin/docker compose up
+ExecStop=/usr/bin/docker compose down
+TimeoutStartSec=0
+Restart=on-failure
+StartLimitIntervalSec=60
+StartLimitBu...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>How to configure NFS server/client</title>
+    <link href="http://localhost:4000/posts/how-to-configure-nfs-server-client/" rel="alternate" type="text/html" title="How to configure NFS server/client" />
+    <published>2023-10-01T00:00:00+03:00</published>
+  
+    <updated>2023-10-01T00:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/how-to-configure-nfs-server-client/</id>
+    <content src="http://localhost:4000/posts/how-to-configure-nfs-server-client/" />
+    <author>
+      <name>alex</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Server
+
+sudo apt-get update 
+sudo apt-get install nfs-kernel-server 
+
+
+sudo mkdir /nfs_share
+sudo chown nobody:nogroup /nfs_share 
+sudo chmod 777 /nfs_share 
+
+
+Configure NFS share folder(/etc/exports)
+/nfs_share 192.168.1.10(rw,sync,no_subtree_check)
+
+192.168.1.10 - ip of NFS client
+
+####export, enable and start NFS share
+sudo exportfs -a
+sudo systemctl enable nfs-kernel-server 
+sudo systemctl ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>How to install and configure MySql Server</title>
+    <link href="http://localhost:4000/posts/how-to-install-and-configure-mysql-server/" rel="alternate" type="text/html" title="How to install and configure MySql Server" />
+    <published>2023-08-19T00:00:00+03:00</published>
+  
+    <updated>2023-08-19T00:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/how-to-install-and-configure-mysql-server/</id>
+    <content src="http://localhost:4000/posts/how-to-install-and-configure-mysql-server/" />
+    <author>
+      <name>alex</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Install MySql Server
+sudo apt install mysql-server
+
+
+Configure MySql Server
+
+Open Mysql console
+sudo mysql
+
+
+Set root password
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+Allow use default authentication method
+ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
+
+Run the security script
+sudo mysql_secure_installation
+
+Creating a MySql User
+CREATE U...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>How to install specific Mysql version</title>
+    <link href="http://localhost:4000/posts/how-to-install-specific-mysql-version/" rel="alternate" type="text/html" title="How to install specific Mysql version" />
+    <published>2023-08-18T00:00:00+03:00</published>
+  
+    <updated>2023-08-18T00:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/how-to-install-specific-mysql-version/</id>
+    <content src="http://localhost:4000/posts/how-to-install-specific-mysql-version/" />
+    <author>
+      <name>alex</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      For example, we should install Mysql version 8.0.34
+
+1) Check version
+apt-cache policy mysql-server
+
+mysql-server:
+  Installed: 8.0.34-0ubuntu0.20.04.1
+  Candidate: 8.0.34-0ubuntu0.20.04.1
+  Version table:
+ *** 8.0.34-0ubuntu0.20.04.1 500
+        500 http://ua.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages
+        500 http://ua.archive.ubuntu.com/ubuntu focal-security/main amd64 Pa...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
