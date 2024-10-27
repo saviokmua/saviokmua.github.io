@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://localhost:4000/</id>
+  <id>https://rubydev.org/</id>
   <title>RubyDev</title>
   <subtitle>Personal block on Ruby programming and IT/Network technologies</subtitle>
-  <updated>2024-10-25T23:34:32+03:00</updated>
+  <updated>2024-10-27T16:54:46+02:00</updated>
   <author>
     <name>Oleksandr Matkovskyi</name>
-    <uri>http://localhost:4000/</uri>
+    <uri>https://rubydev.org/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://rubydev.org/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="http://localhost:4000/"/>
+    href="https://rubydev.org/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
   <rights> © 2024 Oleksandr Matkovskyi </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>How to fix incorrect locale1</title>
-    <link href="http://localhost:4000/posts/how-to-fix-incorrect-locale/" rel="alternate" type="text/html" title="How to fix incorrect locale1" />
+    <title>How to fix incorrect locale</title>
+    <link href="https://rubydev.org/posts/how-to-fix-incorrect-locale/" rel="alternate" type="text/html" title="How to fix incorrect locale" />
     <published>2023-10-13T00:00:00+03:00</published>
   
     <updated>2023-10-13T00:00:00+03:00</updated>
   
-    <id>http://localhost:4000/posts/how-to-fix-incorrect-locale/</id>
-    <content src="http://localhost:4000/posts/how-to-fix-incorrect-locale/" />
+    <id>https://rubydev.org/posts/how-to-fix-incorrect-locale/</id>
+    <content src="https://rubydev.org/posts/how-to-fix-incorrect-locale/" />
     <author>
       <name>alex</name>
     </author>
@@ -65,13 +65,13 @@ perl: warning: Please check that your locale settings:
   
   <entry>
     <title>How to start up docker compose on boot</title>
-    <link href="http://localhost:4000/posts/how-to-start-up-docker-compose-on-boot/" rel="alternate" type="text/html" title="How to start up docker compose on boot" />
+    <link href="https://rubydev.org/posts/how-to-start-up-docker-compose-on-boot/" rel="alternate" type="text/html" title="How to start up docker compose on boot" />
     <published>2023-10-08T00:00:00+03:00</published>
   
     <updated>2023-10-08T00:00:00+03:00</updated>
   
-    <id>http://localhost:4000/posts/how-to-start-up-docker-compose-on-boot/</id>
-    <content src="http://localhost:4000/posts/how-to-start-up-docker-compose-on-boot/" />
+    <id>https://rubydev.org/posts/how-to-start-up-docker-compose-on-boot/</id>
+    <content src="https://rubydev.org/posts/how-to-start-up-docker-compose-on-boot/" />
     <author>
       <name>alex</name>
     </author>
@@ -111,13 +111,13 @@ StartLimitBu...
   
   <entry>
     <title>How to configure NFS server/client</title>
-    <link href="http://localhost:4000/posts/how-to-configure-nfs-server-client/" rel="alternate" type="text/html" title="How to configure NFS server/client" />
+    <link href="https://rubydev.org/posts/how-to-configure-nfs-server-client/" rel="alternate" type="text/html" title="How to configure NFS server/client" />
     <published>2023-10-01T00:00:00+03:00</published>
   
     <updated>2023-10-01T00:00:00+03:00</updated>
   
-    <id>http://localhost:4000/posts/how-to-configure-nfs-server-client/</id>
-    <content src="http://localhost:4000/posts/how-to-configure-nfs-server-client/" />
+    <id>https://rubydev.org/posts/how-to-configure-nfs-server-client/</id>
+    <content src="https://rubydev.org/posts/how-to-configure-nfs-server-client/" />
     <author>
       <name>alex</name>
     </author>
@@ -162,13 +162,13 @@ sudo systemctl ...
   
   <entry>
     <title>How to install and configure MySql Server</title>
-    <link href="http://localhost:4000/posts/how-to-install-and-configure-mysql-server/" rel="alternate" type="text/html" title="How to install and configure MySql Server" />
+    <link href="https://rubydev.org/posts/how-to-install-and-configure-mysql-server/" rel="alternate" type="text/html" title="How to install and configure MySql Server" />
     <published>2023-08-19T00:00:00+03:00</published>
   
     <updated>2023-08-19T00:00:00+03:00</updated>
   
-    <id>http://localhost:4000/posts/how-to-install-and-configure-mysql-server/</id>
-    <content src="http://localhost:4000/posts/how-to-install-and-configure-mysql-server/" />
+    <id>https://rubydev.org/posts/how-to-install-and-configure-mysql-server/</id>
+    <content src="https://rubydev.org/posts/how-to-install-and-configure-mysql-server/" />
     <author>
       <name>alex</name>
     </author>
@@ -214,13 +214,13 @@ CREATE U...
   
   <entry>
     <title>How to install specific Mysql version</title>
-    <link href="http://localhost:4000/posts/how-to-install-specific-mysql-version/" rel="alternate" type="text/html" title="How to install specific Mysql version" />
+    <link href="https://rubydev.org/posts/how-to-install-specific-mysql-version/" rel="alternate" type="text/html" title="How to install specific Mysql version" />
     <published>2023-08-18T00:00:00+03:00</published>
   
     <updated>2023-08-18T00:00:00+03:00</updated>
   
-    <id>http://localhost:4000/posts/how-to-install-specific-mysql-version/</id>
-    <content src="http://localhost:4000/posts/how-to-install-specific-mysql-version/" />
+    <id>https://rubydev.org/posts/how-to-install-specific-mysql-version/</id>
+    <content src="https://rubydev.org/posts/how-to-install-specific-mysql-version/" />
     <author>
       <name>alex</name>
     </author>
