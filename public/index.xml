@@ -35,9 +35,9 @@
           <p class="tw-select-none !tw-my-1">bash</p>]]></description>
 </item><item>
     <title>How to start up docker compose on boot</title>
-    <link>http://localhost:1313/2023-10-08-how-to-start-up-docker-compose-on-boot/</link>
+    <link>http://localhost:1313/how-to-start-up-docker-compose-on-boot/</link>
     <pubDate>Sun, 08 Oct 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/2023-10-08-how-to-start-up-docker-compose-on-boot/</guid>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-start-up-docker-compose-on-boot/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="nfs-logo.png" referrerpolicy="no-referrer">
             </div><ul>
@@ -69,9 +69,9 @@
           <p class="tw-select-none !tw-my-1">bash</p>]]></description>
 </item><item>
     <title>How to configure NFS server/client</title>
-    <link>http://localhost:1313/how-to-configure-nfs-server-client/</link>
+    <link>http://localhost:1313/how-to-configure-nfs-server/client/</link>
     <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-configure-nfs-server-client/</guid>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-configure-nfs-server/client/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="nfs-logo.png" referrerpolicy="no-referrer">
             </div><h3 id="server" class="headerLink">
@@ -184,9 +184,9 @@
           <p class="tw-select-none !tw-my-1">bash</p>]]></description>
 </item><item>
     <title>Basic Auth in Nginx</title>
-    <link>http://localhost:1313/basic-auth-nginx/</link>
+    <link>http://localhost:1313/basic-auth-in-nginx/</link>
     <pubDate>Thu, 01 Jun 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/basic-auth-nginx/</guid>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/basic-auth-in-nginx/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/posts/nginx-logo.png" referrerpolicy="no-referrer">
             </div><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
@@ -264,7 +264,7 @@
     </div>
   </div>
   <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
-    id="codeblock-id-70" 
+    id="codeblock-id-7" 
     class="
       chroma 
       !tw-block 
@@ -371,7 +371,7 @@
     </div>
   </div>
   <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
-    id="codeblock-id-24" 
+    id="codeblock-id-3" 
     class="
       chroma 
       !tw-block 
@@ -417,9 +417,9 @@
           <p class="tw-select-none !tw-my-1">text</p>]]></description>
 </item><item>
     <title>How to migrate LXC(.raw) to KVM(.qcow2)</title>
-    <link>http://localhost:1313/how-to-migrate-raw-to-qcow2/</link>
+    <link>http://localhost:1313/how-to-migrate-lxc.raw-to-kvm.qcow2/</link>
     <pubDate>Wed, 31 May 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-migrate-raw-to-qcow2/</guid>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-migrate-lxc.raw-to-kvm.qcow2/</guid>
     <description><![CDATA[<p>To migrate your LXC virtual server to a KVM just follow these steps:</p>
 <p>For example, we have <code>image.raw</code> based on Ubuntu 18.04.6
 We installed a KVM machine with the same operating system,
