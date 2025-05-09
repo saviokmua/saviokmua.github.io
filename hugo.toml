@@ -703,7 +703,7 @@ theme = 'DoIt'
 # Permalinks config
 [Permalinks]
   # posts = ":year/:month/:contentbasename"
-  posts = ":contentbasename"
+  posts = ":slug"
 
 # Privacy config
 [privacy]
