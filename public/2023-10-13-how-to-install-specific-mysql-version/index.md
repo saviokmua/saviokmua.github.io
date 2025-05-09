@@ -1,8 +1,5 @@
-+++
-date = '2025-05-08T15:01:30+03:00'
-draft = true
-title = 'How to Install Specific Mysql Version'
-+++
+# How to Install Specific Mysql Version
+
 
 # Can't set locale; make sure $LC_* and $LANG are correct!
 
@@ -29,3 +26,4 @@ just run
 ```bash
 sudo dpkg-reconfigure locales
 ```
+

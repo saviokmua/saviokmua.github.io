@@ -1,4 +1,5 @@
 baseURL = 'https://rubydev.org/'
+defaultContentLanguage = "en"
 languageCode = 'en-us'
 title = 'RubyDev'
 theme = 'DoIt'
@@ -7,9 +8,9 @@ theme = 'DoIt'
   #  DoIt theme version
   version = "0.3.X"
   # website title
-  title = "My New Hugo Site"
+  title = "RubyDev"
   # site description
-  description = "This is My New Hugo Site"
+  description = "This site is about Ruby and the development infrastructure"
   # site keywords
   keywords = ["Theme", "Hugo"]
   #  site default theme ("light", "dark", "black", "auto")
