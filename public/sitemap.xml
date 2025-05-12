@@ -26,8 +26,9 @@
             <loc>http://localhost:1313/tags/mysql/</loc><lastmod>2023-06-06T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/tags/auth/</loc><lastmod>2023-06-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/tags/basic-auth/</loc><lastmod>2023-06-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://localhost:1313/basic-auth-in-nginx/</loc><lastmod>2023-06-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/basic-authentication-in-nginx-protect-your-website-with-a-password/</loc><lastmod>2023-06-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/tags/devops/</loc><lastmod>2023-06-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/categories/devops/</loc><lastmod>2023-06-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/tags/docker/</loc><lastmod>2023-06-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/tags/grafana/</loc><lastmod>2023-06-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://localhost:1313/how-to-change-grafana-admin-password/</loc><lastmod>2023-06-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

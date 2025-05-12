@@ -4,6 +4,27 @@ languageCode = 'en-us'
 title = 'RubyDev'
 theme = 'DoIt'
 
+[menu]
+
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "DevOps"
+    url = "/categories/devops/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
 [params]
   #  DoIt theme version
   version = "0.3.X"
@@ -104,7 +125,7 @@ theme = 'DoIt'
       # URL of the LOGO
       logo = ""
       # title name
-      name = ""
+      name = "RubyDev"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -169,7 +190,7 @@ theme = 'DoIt'
       # URL of avatar shown in home page
       # Place your avatar file under static or assets directory
       # The filepath is relative to the static or assets directory
-      avatarURL = "/images/avatar.webp"
+      avatarURL = "images/ruby-dev-logo.png"
       # URL the avatar links to
       avatarLinkURL = ""
       #  title shown in home page (HTML format is supported)
@@ -267,6 +288,7 @@ theme = 'DoIt'
 
   #  Page config
   [params.page]
+    sortBy = "lastmod"
     #  whether to hide a page from home page
     hiddenFromHomePage = false
     #  whether to hide a page from search results

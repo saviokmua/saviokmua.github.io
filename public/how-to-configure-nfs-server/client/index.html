@@ -88,10 +88,13 @@
     <div id="mask"></div><header class="desktop print:!tw-hidden" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="RubyDev"></a>
+            <a href="/" title="RubyDev">RubyDev</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item"
+                    href="/posts/" > Posts </a><a class="menu-item"
+                    href="/about/" > About </a><a class="menu-item"
+                    href="/categories/devops/" > DevOps </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                     <input type="text"
                         placeholder="Search titles or contents..."
                         id="search-input-desktop">
@@ -122,7 +125,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="RubyDev"></a>
+                <a href="/" title="RubyDev">RubyDev</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -149,7 +152,7 @@
                 <button class="search-cancel" id="search-cancel-mobile">
                     Cancel
                 </button>
-            </div><button class="menu-item theme-select tw-w-full" aria-label="Switch Theme">
+            </div><a class="menu-item" href="/posts/" title="" >Posts</a><a class="menu-item" href="/about/" title="" >About</a><a class="menu-item" href="/categories/devops/" title="" >DevOps</a><button class="menu-item theme-select tw-w-full" aria-label="Switch Theme">
                 <svg class="icon"
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"/></svg>
                 <select class="color-theme-select" id="theme-select-mobile" aria-label="Switch Theme">
