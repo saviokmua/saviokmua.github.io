@@ -11,7 +11,7 @@ keywords: ["Nginx basic auth", "nginx password protect", "htpasswd nginx", "prot
 tags: ['auth', 'basic auth', 'nginx']
 categories: ['DevOps']
 hiddenFromHomePage: true
-featuredImage: '/posts/nginx-logo.png'
+featuredImage: 'basic-auth-nginx.webp'
 ---
 
 Sometimes you need to restrict access to specific areas of your website—such as an admin panel, 

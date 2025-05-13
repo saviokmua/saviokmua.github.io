@@ -189,7 +189,7 @@
     <pubDate>Thu, 01 Jun 2023 00:00:00 &#43;0000</pubDate><author>
                         <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/basic-authentication-in-nginx-protect-your-website-with-a-password/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/posts/nginx-logo.png" referrerpolicy="no-referrer">
+                <img src="/basic-authentication-in-nginx-protect-your-website-with-a-password/basic-auth-nginx.webp" referrerpolicy="no-referrer">
             </div><p>Sometimes you need to restrict access to specific areas of your website—such as an admin panel,
 staging environment, or internal documentation. One of the simplest ways to do this is by enabling
 <strong>Basic Authentication</strong> using <strong>Nginx</strong>. In this guide, you’ll learn how to set up password protection in just a few steps.</p>
