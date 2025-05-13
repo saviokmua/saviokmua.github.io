@@ -200,7 +200,7 @@ theme = 'DoIt'
       #  title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page
-      subtitle = "This is My New Hugo Site"
+      subtitle = "The programming as a part of life"
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -218,12 +218,12 @@ theme = 'DoIt'
 
   # Social config about the author
   [params.social]
-    GitHub = "xxxx"
-    Linkedin = ""
-    Twitter = "xxxx"
-    Instagram = "xxxx"
-    Facebook = "xxxx"
-    Telegram = "xxxx"
+    GitHub = "https://github.com/saviokmua"
+    Linkedin = "https://www.linkedin.com/in/oleksandr-matkovskyi/"
+    Twitter = "https://x.com/saviokmua"
+    Instagram = ""
+    Facebook = ""
+    Telegram = "RubyDevOrg"
     Medium = ""
     Gitlab = ""
     Youtubelegacy = ""
@@ -287,7 +287,7 @@ theme = 'DoIt'
     Linktree = ""
     QQ = ""
     QQGroup = ""
-    Email = "xxxx@xxxx.com"
+    #Email = "xxxx@xxxx.com"
     RSS = true #
 
   #  Page config
@@ -393,8 +393,8 @@ theme = 'DoIt'
       enable = true
       Twitter = true
       Facebook = true
-      Linkedin = false
-      Whatsapp = true
+      Linkedin = true
+      Whatsapp = false
       Pinterest = false
       Tumblr = false
       HackerNews = false
@@ -402,19 +402,19 @@ theme = 'DoIt'
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Digg = false
       Stumbleupon = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Renren = false
-      Myspace = true
-      Blogger = true
+      Myspace = false
+      Blogger = false
       Baidu = false
       Odnoklassniki = false
-      Evernote = true
+      Evernote = false
       Skype = false
       Trello = false
       Mix = false

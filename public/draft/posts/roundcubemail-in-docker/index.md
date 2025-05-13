@@ -1,15 +1,5 @@
----
-date: '2023-06-01'
-lastmod: '2023-06-01'
-draft: false
-title: Roundcubemail in Docker
-authors: ['Alex']
-enableReadingTime: true
-description: "Deploy Roundcube Webmail in Docker easily with this step-by-step guide. Set up your self-hosted webmail client with Docker Compose in minutes."
-tags: ['roundcubemail', 'devops', 'docker']
-categories: ['Development infrastructure']
-featuredImage: '/posts/roundcube-logo.png'
----
+# Roundcubemail in Docker
+
 
 docker-compose.yaml 
 ```
@@ -48,3 +38,4 @@ config.custom.inc.php
   $config['smtp_conn_options'] = ['ssl' => ['verify_peer' => false, 'verify_peer_name' => false]];
 
 ```
+

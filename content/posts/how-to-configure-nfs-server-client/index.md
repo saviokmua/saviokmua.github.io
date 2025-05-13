@@ -11,7 +11,7 @@ keywords: ['nfs server setup', 'linux file sharing', 'nfs ubuntu', 'nfs exports'
 tags: ['NFS', 'linux', 'ubuntu', 'server', 'client']
 categories: ['DevOps']
 hiddenFromHomePage: true
-featuredImage: '/nfs-logo.png'
+featuredImage: 'how-to-configure-nfs-server-client.jpg'
 ---
 
 # 📁 How to Configure NFS Server and Client on Linux

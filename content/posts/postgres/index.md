@@ -7,7 +7,8 @@ authors: ['Alex']
 enableReadingTime: true
 description: "Install and configure PostgreSQL on your server with this easy guide. Learn how to set up roles, databases, enable remote access, and secure your PostgreSQL instance."
 tags: ['db', 'postgres', 'server']
-categories: ['Development infrastructure']
+hiddenFromHomePage: true
+categories: ['DevOps']
 featuredImage: '/posts/postgresql-logo.png'
 ---
 

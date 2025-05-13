@@ -33,19 +33,17 @@
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
           <p class="tw-select-none !tw-my-1">text</p>]]></description>
 </item><item>
-    <title>How to start up docker compose on boot</title>
+    <title>How to Start Docker Compose on Boot with systemd</title>
     <link>http://localhost:1313/how-to-start-up-docker-compose-on-boot/</link>
     <pubDate>Sun, 08 Oct 2023 00:00:00 &#43;0000</pubDate><author>
                         <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-start-up-docker-compose-on-boot/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="nfs-logo.png" referrerpolicy="no-referrer">
-            </div><ul>
-<li></li>
-</ul>
-<p>For example, we have <code>/opt/myapp/docker-compose.yml</code></p>
-<ol>
-<li>Create <code>/etc/systemd/system/docker-compose-myapp.service</code></li>
-</ol>
+                <img src="/images/docker-compose.jpg" referrerpolicy="no-referrer">
+            </div><h1 id="-how-to-start-docker-compose-on-boot-using-systemd" class="headerLink">
+    <a href="#-how-to-start-docker-compose-on-boot-using-systemd" class="header-mark"></a>🚀 How to Start Docker Compose on Boot Using systemd</h1><p>Want your Docker containers to start automatically on boot? Here’s a clean way to run Docker Compose projects as services with <code>systemd</code>.</p>
+<hr>
+<h2 id="-example-project-structure" class="headerLink">
+    <a href="#-example-project-structure" class="header-mark"></a>🛠 Example Project Structure</h2><p>Suppose your project is located at:</p>
 <div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
   <div class="
     
@@ -65,51 +63,20 @@
       aria-hidden="true">
           <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">bash</p>]]></description>
+          <p class="tw-select-none !tw-my-1">text</p>]]></description>
 </item><item>
     <title>How to Configure NFS Server and Client on Linux</title>
     <link>http://localhost:1313/how-to-configure-nfs-server-client-linux/</link>
     <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
                         <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-configure-nfs-server-client-linux/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/nfs-logo.png" referrerpolicy="no-referrer">
+                <img src="/how-to-configure-nfs-server-client-linux/how-to-configure-nfs-server-client.jpg" referrerpolicy="no-referrer">
             </div><h1 id="-how-to-configure-nfs-server-and-client-on-linux" class="headerLink">
     <a href="#-how-to-configure-nfs-server-and-client-on-linux" class="header-mark"></a>📁 How to Configure NFS Server and Client on Linux</h1><p>NFS (Network File System) is a protocol that allows file sharing between systems over a network. This guide shows you how to configure an <strong>NFS server</strong> and a <strong>client</strong> on Ubuntu-based systems.</p>
 <hr>
 <h2 id="-nfs-server-setup" class="headerLink">
     <a href="#-nfs-server-setup" class="header-mark"></a>🖥️ NFS Server Setup</h2><h3 id="1-install-nfs-server" class="headerLink">
     <a href="#1-install-nfs-server" class="header-mark"></a>1. Install NFS server</h3><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">bash</p>]]></description>
-</item><item>
-    <title>How to install specific Mysql version</title>
-    <link>http://localhost:1313/how-to-install-specific-mysql-version/</link>
-    <pubDate>Fri, 18 Aug 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-install-specific-mysql-version/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="mysql.svg" referrerpolicy="no-referrer">
-            </div><p>For example, we should install Mysql version 8.0.34</p>
-<ol>
-<li>Check version</li>
-</ol>
-<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
   <div class="
     
     tw-flex 
@@ -138,34 +105,6 @@
                 <img src="/posts/postgresql-logo.png" referrerpolicy="no-referrer">
             </div><h3 id="install-postgresql" class="headerLink">
     <a href="#install-postgresql" class="header-mark"></a>Install PostgreSql</h3><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">bash</p>]]></description>
-</item><item>
-    <title>Install and configure Mysql Server</title>
-    <link>http://localhost:1313/install-and-configure-mysql-server/</link>
-    <pubDate>Tue, 06 Jun 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/install-and-configure-mysql-server/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/roundcube-logo.png" referrerpolicy="no-referrer">
-            </div><h2 id="install-mysql-server" class="headerLink">
-    <a href="#install-mysql-server" class="header-mark"></a>Install MySql Server</h2><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
   <div class="
     
     tw-flex 
@@ -247,65 +186,5 @@ staging environment, or internal documentation. One of the simplest ways to do t
           <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
           <p class="tw-select-none !tw-my-1">text</p>]]></description>
-</item><item>
-    <title>Roundcubemail in Docker</title>
-    <link>http://localhost:1313/roundcubemail-in-docker/</link>
-    <pubDate>Thu, 01 Jun 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/roundcubemail-in-docker/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/roundcube-logo.png" referrerpolicy="no-referrer">
-            </div><p>docker-compose.yaml</p>
-<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">text</p>]]></description>
-</item><item>
-    <title>How to migrate LXC(.raw) to KVM(.qcow2)</title>
-    <link>http://localhost:1313/how-to-migrate-lxc.raw-to-kvm.qcow2/</link>
-    <pubDate>Wed, 31 May 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-migrate-lxc.raw-to-kvm.qcow2/</guid>
-    <description><![CDATA[<p>To migrate your LXC virtual server to a KVM just follow these steps:</p>
-<p>For example, we have <code>image.raw</code> based on Ubuntu 18.04.6
-We installed a KVM machine with the same operating system,
-in my case it was KVM server with ssh access to 192.168.1.1</p>
-<ol>
-<li>mount image.raw like next:</li>
-</ol>
-<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">bash</p>]]></description>
 </item></channel>
 </rss>
