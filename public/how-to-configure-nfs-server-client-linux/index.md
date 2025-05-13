@@ -1,18 +1,5 @@
----
-date: '2023-10-01'
-lastmod: '2023-10-01'
-draft: false
-title: 'How to Configure NFS Server and Client on Linux'
-slug: 'how-to-configure-nfs-server-client-linux'
-authors: ['Alex']
-enableReadingTime: true
-description: "Learn how to configure an NFS server and client for file sharing in Linux. Step-by-step instructions to install, export, and mount directories over a network using NFS."
-keywords: ['nfs server setup', 'linux file sharing', 'nfs ubuntu', 'nfs exports', 'nfs client configuration', 'mount nfs ubuntu', 'linux devops networking']
-tags: ['NFS', 'linux', 'ubuntu', 'server', 'client']
-categories: ['DevOps']
-hiddenFromHomePage: true
-featuredImage: '/nfs-logo.png'
----
+# How to Configure NFS Server and Client on Linux
+
 
 # 📁 How to Configure NFS Server and Client on Linux
 

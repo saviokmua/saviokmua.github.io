@@ -11,7 +11,7 @@ tags: ["grafana", "devops", "password"]
 categories: ["DevOps"]
 hiddenFromHomePage: true
 enableReadingTime: true
-featuredImage: "/images/grafana-logo.svg"
+featuredImage: "how-to-change-grafana-password.png"
 ---
 
 # 🔐 How to Change Grafana Admin Password

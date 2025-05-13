@@ -69,14 +69,18 @@
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
           <p class="tw-select-none !tw-my-1">bash</p>]]></description>
 </item><item>
-    <title>How to configure NFS server/client</title>
-    <link>http://localhost:1313/how-to-configure-nfs-server/client/</link>
+    <title>How to Configure NFS Server and Client on Linux</title>
+    <link>http://localhost:1313/how-to-configure-nfs-server-client-linux/</link>
     <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-configure-nfs-server/client/</guid>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-configure-nfs-server-client-linux/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="nfs-logo.png" referrerpolicy="no-referrer">
-            </div><h3 id="server" class="headerLink">
-    <a href="#server" class="header-mark"></a>Server</h3><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+                <img src="/nfs-logo.png" referrerpolicy="no-referrer">
+            </div><h1 id="-how-to-configure-nfs-server-and-client-on-linux" class="headerLink">
+    <a href="#-how-to-configure-nfs-server-and-client-on-linux" class="header-mark"></a>📁 How to Configure NFS Server and Client on Linux</h1><p>NFS (Network File System) is a protocol that allows file sharing between systems over a network. This guide shows you how to configure an <strong>NFS server</strong> and a <strong>client</strong> on Ubuntu-based systems.</p>
+<hr>
+<h2 id="-nfs-server-setup" class="headerLink">
+    <a href="#-nfs-server-setup" class="header-mark"></a>🖥️ NFS Server Setup</h2><h3 id="1-install-nfs-server" class="headerLink">
+    <a href="#1-install-nfs-server" class="header-mark"></a>1. Install NFS server</h3><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
   <div class="
     
     tw-flex 
@@ -220,7 +224,7 @@ staging environment, or internal documentation. One of the simplest ways to do t
     <pubDate>Thu, 01 Jun 2023 00:00:00 &#43;0000</pubDate><author>
                         <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-change-grafana-admin-password/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/images/grafana-logo.svg" referrerpolicy="no-referrer">
+                <img src="/how-to-change-grafana-admin-password/how-to-change-grafana-password.png" referrerpolicy="no-referrer">
             </div><h1 id="-how-to-change-grafana-admin-password" class="headerLink">
     <a href="#-how-to-change-grafana-admin-password" class="header-mark"></a>🔐 How to Change Grafana Admin Password</h1><p>If you&rsquo;ve forgotten the admin password in Grafana or just want to reset it for security reasons, there&rsquo;s a simple command-line tool you can use to reset it instantly. This guide walks you through changing the <strong>Grafana administrator password</strong> using the built-in CLI.</p>
 <hr>
