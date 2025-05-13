@@ -5,13 +5,17 @@ title = 'RubyDev'
 theme = 'DoIt'
 
 [menu]
-
+  [[menu.main]]
+    identifier = "news"
+    name = "News"
+    url = "/news/"
+    weight = 1
 
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
-    weight = 1
+    weight = 2
 
   [[menu.main]]
     identifier = "contact"
@@ -23,7 +27,7 @@ theme = 'DoIt'
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 4
 
 [params]
   #  DoIt theme version
