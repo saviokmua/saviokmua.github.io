@@ -30,6 +30,7 @@ theme = 'DoIt'
     weight = 4
 
 [params]
+
   favicon = "favicon"
   #  DoIt theme version
   version = "0.3.X"
