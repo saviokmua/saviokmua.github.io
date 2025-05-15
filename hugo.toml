@@ -640,10 +640,10 @@ theme = 'DoIt'
 
   #  Analytics config
   [params.analytics]
-    enable = false
+    enable = true
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "G-3YW3V7MWBD"
       # whether to anonymize IP
       anonymizeIP = true
     # Fathom Analytics
