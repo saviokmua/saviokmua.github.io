@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mikrotik on RubyDev</title>
+    <link>http://localhost:1313/tags/mikrotik/</link>
+    <description>Recent content in Mikrotik on RubyDev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mikrotik/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Port Forward FTP on MikroTik</title>
+      <link>http://localhost:1313/mikrotik-ftp-port-forwarding/</link>
+      <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mikrotik-ftp-port-forwarding/</guid>
+      <description>&lt;h1 id=&#34;how-to-port-forward-ftp-on-mikrotik-router&#34; class=&#34;headerLink&#34;&gt;&#xA;    &lt;a href=&#34;#how-to-port-forward-ftp-on-mikrotik-router&#34; class=&#34;header-mark&#34;&gt;&lt;/a&gt;How to Port Forward FTP on MikroTik Router&lt;/h1&gt;&lt;p&gt;Port forwarding FTP on a MikroTik router allows external users to access an internal FTP server. This guide explains how to forward port &lt;strong&gt;21&lt;/strong&gt; (default for FTP) to an internal machine using &lt;strong&gt;Winbox/WebFig&lt;/strong&gt; or &lt;strong&gt;CLI&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-requirements&#34; class=&#34;headerLink&#34;&gt;&#xA;    &lt;a href=&#34;#-requirements&#34; class=&#34;header-mark&#34;&gt;&lt;/a&gt;🛠 Requirements&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;MikroTik router with access to the internet&lt;/li&gt;&#xA;&lt;li&gt;Internal FTP server (e.g., 10.22.1.1)&lt;/li&gt;&#xA;&lt;li&gt;Administrator access to MikroTik (Winbox or Terminal)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-step-by-step-port-forwarding-ftp-port-21&#34; class=&#34;headerLink&#34;&gt;&#xA;    &lt;a href=&#34;#-step-by-step-port-forwarding-ftp-port-21&#34; class=&#34;header-mark&#34;&gt;&lt;/a&gt;⚙️ Step-by-Step: Port Forwarding FTP (Port 21)&lt;/h2&gt;&lt;h3 id=&#34;1-open-winbox-or-webfig&#34; class=&#34;headerLink&#34;&gt;&#xA;    &lt;a href=&#34;#1-open-winbox-or-webfig&#34; class=&#34;header-mark&#34;&gt;&lt;/a&gt;1. Open Winbox or WebFig&lt;/h3&gt;&lt;p&gt;Navigate to:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

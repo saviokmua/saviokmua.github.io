@@ -15,6 +15,26 @@
 <h2 id="problem" class="headerLink">
     <a href="#problem" class="header-mark"></a>Problem</h2><p>Suppose we want to handle updates to details of various animal types—dogs, cats, and mice—through a single endpoint like:</p>]]></description>
 </item><item>
+    <title>How to Port Forward FTP on MikroTik</title>
+    <link>http://localhost:1313/mikrotik-ftp-port-forwarding/</link>
+    <pubDate>Sat, 17 May 2025 00:00:00 &#43;0000</pubDate><author>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/mikrotik-ftp-port-forwarding/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="mikrotik-ftp-port-forwarding.png" referrerpolicy="no-referrer">
+            </div><h1 id="how-to-port-forward-ftp-on-mikrotik-router" class="headerLink">
+    <a href="#how-to-port-forward-ftp-on-mikrotik-router" class="header-mark"></a>How to Port Forward FTP on MikroTik Router</h1><p>Port forwarding FTP on a MikroTik router allows external users to access an internal FTP server. This guide explains how to forward port <strong>21</strong> (default for FTP) to an internal machine using <strong>Winbox/WebFig</strong> or <strong>CLI</strong>.</p>
+<hr>
+<h2 id="-requirements" class="headerLink">
+    <a href="#-requirements" class="header-mark"></a>🛠 Requirements</h2><ul>
+<li>MikroTik router with access to the internet</li>
+<li>Internal FTP server (e.g., 10.22.1.1)</li>
+<li>Administrator access to MikroTik (Winbox or Terminal)</li>
+</ul>
+<hr>
+<h2 id="-step-by-step-port-forwarding-ftp-port-21" class="headerLink">
+    <a href="#-step-by-step-port-forwarding-ftp-port-21" class="header-mark"></a>⚙️ Step-by-Step: Port Forwarding FTP (Port 21)</h2><h3 id="1-open-winbox-or-webfig" class="headerLink">
+    <a href="#1-open-winbox-or-webfig" class="header-mark"></a>1. Open Winbox or WebFig</h3><p>Navigate to:</p>]]></description>
+</item><item>
     <title>Hidden Performance Trap in Rails: Avoid nil in .where(id: [...])</title>
     <link>http://localhost:1313/rails-where-id-nil-performance-trap/</link>
     <pubDate>Tue, 13 May 2025 00:00:00 &#43;0000</pubDate><author>
