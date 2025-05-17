@@ -11,7 +11,7 @@ tags: ["mikrotik", "networking", "ftp", "firewall"]
 categories: ["DevOps"]
 hiddenFromHomePage: true
 enableReadingTime: true
-featuredImage: "mikrotik-ftp-port-forwarding.png"
+featuredImage: "post.jpg"
 ---
 
 # How to Port Forward FTP on MikroTik Router
