@@ -6,8 +6,15 @@
     <description>Recent content in Alex on RubyDev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/authors/alex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conditional Routing in Rails: Cleanly Split Controllers by Query Parameter</title>
+      <link>http://localhost:1313/rails-conditional-routing-constraints/</link>
+      <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rails-conditional-routing-constraints/</guid>
+      <description>&lt;h1 id=&#34;conditional-routing-in-ruby-on-rails-using-custom-constraints&#34; class=&#34;headerLink&#34;&gt;&#xA;    &lt;a href=&#34;#conditional-routing-in-ruby-on-rails-using-custom-constraints&#34; class=&#34;header-mark&#34;&gt;&lt;/a&gt;Conditional Routing in Ruby on Rails Using Custom Constraints&lt;/h1&gt;&lt;p&gt;In complex Ruby on Rails applications, it&amp;rsquo;s common to route requests based on dynamic conditions, such as the value of a query parameter. One powerful way to handle such cases is to use &lt;strong&gt;custom routing constraints&lt;/strong&gt;. This article demonstrates how to route the same endpoint to different controllers based on the &lt;code&gt;subject_type&lt;/code&gt; parameter.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem&#34; class=&#34;headerLink&#34;&gt;&#xA;    &lt;a href=&#34;#problem&#34; class=&#34;header-mark&#34;&gt;&lt;/a&gt;Problem&lt;/h2&gt;&lt;p&gt;Suppose we want to handle updates to details of various animal types—dogs, cats, and mice—through a single endpoint like:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hidden Performance Trap in Rails: Avoid nil in .where(id: [...])</title>
       <link>http://localhost:1313/rails-where-id-nil-performance-trap/</link>

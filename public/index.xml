@@ -3,9 +3,20 @@
         <title>RubyDev</title>
         <link>http://localhost:1313/</link>
         <description>This site is about Ruby and the development infrastructure</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 13 May 2025 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 May 2025 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Conditional Routing in Rails: Cleanly Split Controllers by Query Parameter</title>
+    <link>http://localhost:1313/rails-conditional-routing-constraints/</link>
+    <pubDate>Sat, 17 May 2025 00:00:00 &#43;0000</pubDate><author>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/rails-conditional-routing-constraints/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/rails-conditional-routing-constraints/Ruby_on_Rails_Routing.jpg" referrerpolicy="no-referrer">
+            </div><h1 id="conditional-routing-in-ruby-on-rails-using-custom-constraints" class="headerLink">
+    <a href="#conditional-routing-in-ruby-on-rails-using-custom-constraints" class="header-mark"></a>Conditional Routing in Ruby on Rails Using Custom Constraints</h1><p>In complex Ruby on Rails applications, it&rsquo;s common to route requests based on dynamic conditions, such as the value of a query parameter. One powerful way to handle such cases is to use <strong>custom routing constraints</strong>. This article demonstrates how to route the same endpoint to different controllers based on the <code>subject_type</code> parameter.</p>
+<h2 id="problem" class="headerLink">
+    <a href="#problem" class="header-mark"></a>Problem</h2><p>Suppose we want to handle updates to details of various animal types—dogs, cats, and mice—through a single endpoint like:</p>]]></description>
+</item><item>
     <title>Hidden Performance Trap in Rails: Avoid nil in .where(id: [...])</title>
     <link>http://localhost:1313/rails-where-id-nil-performance-trap/</link>
     <pubDate>Tue, 13 May 2025 00:00:00 &#43;0000</pubDate><author>

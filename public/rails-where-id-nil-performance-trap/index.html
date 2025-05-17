@@ -29,8 +29,14 @@
 
 <meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><meta name="twitter:creator" content="@https://x.com/saviokmua" /><link rel="icon" href="favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<link rel="canonical" href="http://localhost:1313/rails-where-id-nil-performance-trap/" /><link rel="prev" href="http://localhost:1313/how-to-fix-incorrect-locale-warnings-on-linux/" />
-<link rel="stylesheet" href="/css/main.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">{"@context": "https://schema.org","@type": "BlogPosting",
+<link rel="canonical" href="http://localhost:1313/rails-where-id-nil-performance-trap/" /><link rel="prev" href="http://localhost:1313/how-to-fix-incorrect-locale-warnings-on-linux/" /><link rel="next" href="http://localhost:1313/rails-conditional-routing-constraints/" />
+<link rel="stylesheet" href="/css/main.min.css"><link rel="stylesheet" href="/css/style.min.css">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JWMRTV5');</script>
+<script type="application/ld+json">{"@context": "https://schema.org","@type": "BlogPosting",
         "headline": "Hidden Performance Trap in Rails: Avoid nil in .where(id: [...])",
         "inLanguage": "en-us",
         "mainEntityOfPage": {
@@ -52,7 +58,11 @@
     }</script></head>
 
 
-<body data-instant-intensity="viewport" class="tw-flex tw-min-h-screen tw-flex-col"><script type="text/javascript">
+<body data-instant-intensity="viewport" class="tw-flex tw-min-h-screen tw-flex-col">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JWMRTV5"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript">
     function setTheme(theme) {
       document.body.setAttribute('theme', theme); 
       document.documentElement.className = theme;
@@ -704,6 +714,20 @@ A query that should have completed instantly began taking several seconds — an
 
         
 
+
+<h2>Related Content</h2>
+<div class="related-container">
+    <div class="related-item-container">
+            <div class="related-image">
+                <a href="/rails-conditional-routing-constraints/"><img   src='/rails-conditional-routing-constraints/Ruby_on_Rails_Routing.jpg'   alt="Accidentally including nil in a .where(id: [...]) clause in Rails can drastically slow down PostgreSQL queries — or even trigger ActiveRecord::QueryCanceled. Learn why, and how to prevent it." height="200" width="400"></a>
+            </div><h2 class="related-title">
+                <a href="/rails-conditional-routing-constraints/">Conditional Routing in Rails: Cleanly Split Controllers by Query Parameter</a>
+            </h2>
+        </div>
+    
+
+</div>
+
 <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -731,7 +755,9 @@ A query that should have completed instantly began taking several seconds — an
     </div>
 
     <div class="post-nav print:tw-hidden"><a href="/how-to-fix-incorrect-locale-warnings-on-linux/" class="prev" rel="prev" title="How to Fix Incorrect Locale Warnings on Linux"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>How to Fix Incorrect Locale Warnings on Linux</a></div>
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>How to Fix Incorrect Locale Warnings on Linux</a>
+            <a href="/rails-conditional-routing-constraints/" class="next" rel="next" title="Conditional Routing in Rails: Cleanly Split Controllers by Query Parameter">Conditional Routing in Rails: Cleanly Split Controllers by Query Parameter<svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a></div>
 </div>
 </article></main><footer class="footer">
         <div class="footer-container"><div class="footer-line">
