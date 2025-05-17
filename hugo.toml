@@ -435,9 +435,9 @@ theme = 'DoIt'
       # Disqus comment config
       [params.page.comment.disqus]
         #
-        enable = false
+        enable = true
         # Disqus shortname to use Disqus in posts
-        shortname = ""
+        shortname = "rubydev-org"
       # Gitalk comment config
       [params.page.comment.gitalk]
         #
