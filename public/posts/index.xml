@@ -3,7 +3,23 @@
         <title>All Posts - RubyDev</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | RubyDev</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 May 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 24 May 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>RubyMine and Cursor AI Synchronisation</title>
+    <link>http://localhost:1313/rubymine-cursor-ai-sync/</link>
+    <pubDate>Sat, 24 May 2025 00:00:00 &#43;0000</pubDate><author>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/rubymine-cursor-ai-sync/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/rubymine-cursor-ai-sync/rubymine-and-cursor-ai.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="rubymine-and-cursor-ai-synchronization" class="headerLink">
+    <a href="#rubymine-and-cursor-ai-synchronization" class="header-mark"></a>RubyMine and Cursor AI Synchronization</h2><p>At the time of writing, AI integration in RubyMine is still lacking.<br>
+As a workaround, we can use two tools in tandem:</p>
+<ol>
+<li><strong>RubyMine</strong> – a powerful and full-featured IDE</li>
+<li><strong>Cursor AI</strong> – an additional editor enhanced with AI capabilities</li>
+</ol>
+<p>To make this setup efficient, it would be great to synchronize these tools.<br>
+For example, when we open a file in RubyMine, the same file could also be opened automatically in Cursor AI.</p>]]></description>
+</item><item>
     <title>Conditional Routing in Rails: Cleanly Split Controllers by Query Parameter</title>
     <link>http://localhost:1313/rails-conditional-routing-constraints/</link>
     <pubDate>Sat, 17 May 2025 00:00:00 &#43;0000</pubDate><author>
@@ -20,7 +36,7 @@
     <pubDate>Sat, 17 May 2025 00:00:00 &#43;0000</pubDate><author>
                         <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/mikrotik-ftp-port-forwarding/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="post.png" referrerpolicy="no-referrer">
+                <img src="/mikrotik-ftp-port-forwarding/post.jpg" referrerpolicy="no-referrer">
             </div><h1 id="how-to-port-forward-ftp-on-mikrotik-router" class="headerLink">
     <a href="#how-to-port-forward-ftp-on-mikrotik-router" class="header-mark"></a>How to Port Forward FTP on MikroTik Router</h1><p>Port forwarding FTP on a MikroTik router allows external users to access an internal FTP server. This guide explains how to forward port <strong>21</strong> (default for FTP) to an internal machine using <strong>Winbox/WebFig</strong> or <strong>CLI</strong>.</p>
 <hr>
