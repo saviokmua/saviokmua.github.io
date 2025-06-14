@@ -6,8 +6,15 @@
     <description>Recent content in Docker on RubyDev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dockge – Beautiful, Fancy, Easy-to-Use Docker Compose Manager</title>
+      <link>http://localhost:1313/dockge-fancy-docker-compose-manager/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dockge-fancy-docker-compose-manager/</guid>
+      <description>&lt;h3 id=&#34;dockge--beautiful-fancy-easy-to-use-docker-compose-manager&#34; class=&#34;headerLink&#34;&gt;&#xA;    &lt;a href=&#34;#dockge--beautiful-fancy-easy-to-use-docker-compose-manager&#34; class=&#34;header-mark&#34;&gt;&lt;/a&gt;Dockge – Beautiful, Fancy, Easy-to-Use Docker Compose Manager&lt;/h3&gt;&lt;p&gt;Today I discovered a fantastic tool for managing my Docker containers based on docker-compose.yml files — it’s called &lt;a href=&#34;https://dockge.kuma.pet/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Dockge&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Dockge isn’t just another wrapper around Docker — it genuinely impressed me. It has a beautiful, modern interface, works fast, and most importantly, makes it super easy to start, stop, and monitor services in a stack. Some highlights:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Fully self-hosted — I just added it as a service in my existing docker-compose.yml.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to Start Docker Compose on Boot with systemd</title>
       <link>http://localhost:1313/how-to-start-up-docker-compose-on-boot/</link>
