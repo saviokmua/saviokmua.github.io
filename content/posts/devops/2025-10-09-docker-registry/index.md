@@ -11,6 +11,8 @@ keywords: ["docker registry", "private docker registry", "docker registry ui", "
 tags: ['docker', 'registry', 'nginx', 'devops', 'self-hosted']
 categories: ['DevOps']
 hiddenFromHomePage: false
+featuredImagePreview: "logo.jpg"
+featuredImage: 'logo.jpg'
 ---
 
 ### How to Set Up a Private Docker Registry with UI and Authentication
