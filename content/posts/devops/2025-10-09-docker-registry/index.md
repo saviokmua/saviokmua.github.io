@@ -92,7 +92,7 @@ To access the registry through a single domain, let's configure Nginx as a rever
 ```nginx
 # UI on root
 location / {
-    proxy_pass http://10.22.1.117:8089;
+    proxy_pass http://localhost:8089;
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -101,7 +101,7 @@ location / {
 
 # Registry API on /v2/
 location /v2/ {
-    proxy_pass http://10.22.1.117:5005;
+    proxy_pass http://localhost:5005;
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
