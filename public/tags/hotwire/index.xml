@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hotwire on RubyDev</title>
+    <link>http://localhost:1313/tags/hotwire/</link>
+    <description>Recent content in Hotwire on RubyDev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hotwire/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Turbo Frames in Ruby on Rails: Building Modal Windows Without JavaScript</title>
+      <link>http://localhost:1313/turbo-frames-modal-example-ruby-on-rails/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/turbo-frames-modal-example-ruby-on-rails/</guid>
+      <description>&lt;h1 id=&#34;turbo-frames-in-ruby-on-rails-building-modal-windows-without-javascript&#34; class=&#34;headerLink&#34;&gt;&#xA;    &lt;a href=&#34;#turbo-frames-in-ruby-on-rails-building-modal-windows-without-javascript&#34; class=&#34;header-mark&#34;&gt;&lt;/a&gt;Turbo Frames in Ruby on Rails: Building Modal Windows Without JavaScript&lt;/h1&gt;&lt;p&gt;Turbo Frames is a powerful feature of Hotwire that allows you to create dynamic, interactive interfaces in Ruby on Rails without writing JavaScript code. In this guide, we&amp;rsquo;ll build a complete example of a modal window for creating posts.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-are-turbo-frames&#34; class=&#34;headerLink&#34;&gt;&#xA;    &lt;a href=&#34;#what-are-turbo-frames&#34; class=&#34;header-mark&#34;&gt;&lt;/a&gt;What are Turbo Frames?&lt;/h2&gt;&lt;p&gt;Turbo Frames is a mechanism for updating parts of a page without reloading the entire page. This allows you to:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

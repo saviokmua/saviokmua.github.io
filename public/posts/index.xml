@@ -3,7 +3,78 @@
         <title>All Posts - RubyDev</title>
         <link>http://localhost:1313/posts/</link>
         <description>All Posts | RubyDev</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 22 Oct 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Turbo Frames in Ruby on Rails: Building Modal Windows Without JavaScript</title>
+    <link>http://localhost:1313/turbo-frames-modal-example-ruby-on-rails/</link>
+    <pubDate>Wed, 22 Oct 2025 00:00:00 &#43;0000</pubDate><author>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/turbo-frames-modal-example-ruby-on-rails/</guid>
+    <description><![CDATA[<h1 id="turbo-frames-in-ruby-on-rails-building-modal-windows-without-javascript" class="headerLink">
+    <a href="#turbo-frames-in-ruby-on-rails-building-modal-windows-without-javascript" class="header-mark"></a>Turbo Frames in Ruby on Rails: Building Modal Windows Without JavaScript</h1><p>Turbo Frames is a powerful feature of Hotwire that allows you to create dynamic, interactive interfaces in Ruby on Rails without writing JavaScript code. In this guide, we&rsquo;ll build a complete example of a modal window for creating posts.</p>
+<h2 id="what-are-turbo-frames" class="headerLink">
+    <a href="#what-are-turbo-frames" class="header-mark"></a>What are Turbo Frames?</h2><p>Turbo Frames is a mechanism for updating parts of a page without reloading the entire page. This allows you to:</p>]]></description>
+</item><item>
+    <title>How to Set Up a Private Docker Registry with UI and Authentication</title>
+    <link>http://localhost:1313/how-to-setup-private-docker-registry-with-ui-and-auth/</link>
+    <pubDate>Thu, 09 Oct 2025 00:00:00 &#43;0000</pubDate><author>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-setup-private-docker-registry-with-ui-and-auth/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/how-to-setup-private-docker-registry-with-ui-and-auth/logo.jpg" referrerpolicy="no-referrer">
+            </div><h3 id="how-to-set-up-a-private-docker-registry-with-ui-and-authentication" class="headerLink">
+    <a href="#how-to-set-up-a-private-docker-registry-with-ui-and-authentication" class="header-mark"></a>How to Set Up a Private Docker Registry with UI and Authentication</h3><p>If you work with Docker and need your own private registry to store images — this guide is for you.
+Let&rsquo;s explore how to deploy Docker Registry with a convenient web interface and set up authentication through Nginx.</p>
+<h2 id="-docker-compose-configuration" class="headerLink">
+    <a href="#-docker-compose-configuration" class="header-mark"></a>🔧 Docker Compose Configuration</h2><p>First, let&rsquo;s create a <code>docker-compose.yml</code> file with two services: the registry itself and a UI for it.</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">yaml</p>]]></description>
+</item><item>
+    <title>Gem from a private Gitlab repository in your Gemfile(for Docker)</title>
+    <link>http://localhost:1313/gem-from-private-repository-in-your-gemfile-for-docker/</link>
+    <pubDate>Sat, 23 Aug 2025 00:00:00 &#43;0000</pubDate><author>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/gem-from-private-repository-in-your-gemfile-for-docker/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/gem-from-private-repository-in-your-gemfile-for-docker/Gemfile_and_Docker.jpg" referrerpolicy="no-referrer">
+            </div><h1 id="gem-from-a-private-gitlab-repository-in-your-gemfilefor-docker" class="headerLink">
+    <a href="#gem-from-a-private-gitlab-repository-in-your-gemfilefor-docker" class="header-mark"></a>Gem from a private Gitlab repository in your Gemfile(for Docker)</h1><p>If you want to deploy your Ruby on Rails project with Kamal,
+and your project depends on a Gem hosted in a private GitLab repository,</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">ruby</p>]]></description>
+</item><item>
     <title>Dockge – Beautiful, Fancy, Easy-to-Use Docker Compose Manager</title>
     <link>http://localhost:1313/dockge-fancy-docker-compose-manager/</link>
     <pubDate>Sat, 14 Jun 2025 00:00:00 &#43;0000</pubDate><author>
@@ -13,9 +84,7 @@
             </div><h3 id="dockge--beautiful-fancy-easy-to-use-docker-compose-manager" class="headerLink">
     <a href="#dockge--beautiful-fancy-easy-to-use-docker-compose-manager" class="header-mark"></a>Dockge – Beautiful, Fancy, Easy-to-Use Docker Compose Manager</h3><p>Today I discovered a fantastic tool for managing my Docker containers based on docker-compose.yml files — it’s called <a href="https://dockge.kuma.pet/" target="_blank" rel="noopener noreferrer">Dockge</a>.</p>
 <p>Dockge isn’t just another wrapper around Docker — it genuinely impressed me. It has a beautiful, modern interface, works fast, and most importantly, makes it super easy to start, stop, and monitor services in a stack. Some highlights:</p>
-<ul>
-<li>
-<p>Fully self-hosted — I just added it as a service in my existing docker-compose.yml.</p>]]></description>
+<p><img class="tw-inline" loading="lazy" src='/dockge-fancy-docker-compose-manager/img.png' srcset="/dockge-fancy-docker-compose-manager/img_hu_269f940ac61f82f9.webp 800w, /dockge-fancy-docker-compose-manager/img_hu_113074fa20d9564c.webp 1200w, /dockge-fancy-docker-compose-manager/img_hu_d3c407309bac9e33.webp 1600w"  alt="dockge" height="872" width="1903"></p>]]></description>
 </item><item>
     <title>RubyMine and Cursor AI Synchronisation</title>
     <link>http://localhost:1313/rubymine-cursor-ai-sync/</link>
@@ -93,6 +162,26 @@ For example, when we open a file in RubyMine, the same file could also be opened
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
           <p class="tw-select-none !tw-my-1">ruby</p>]]></description>
 </item><item>
+    <title>How to Add RuboCop Checking for Your Ruby Project in GitLab CI</title>
+    <link>http://localhost:1313/how-to-add-rubocop-checking-for-your-ruby-project-for-gitlab-ci/</link>
+    <pubDate>Mon, 27 Jan 2025 00:00:00 &#43;0000</pubDate><author>
+                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-add-rubocop-checking-for-your-ruby-project-for-gitlab-ci/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="rubocop-gitlabci.jpg" referrerpolicy="no-referrer">
+            </div><h1 id="how-to-add-rubocop-checking-for-your-ruby-project-in-gitlab-ci" class="headerLink">
+    <a href="#how-to-add-rubocop-checking-for-your-ruby-project-in-gitlab-ci" class="header-mark"></a>How to Add RuboCop Checking for Your Ruby Project in GitLab CI</h1><p>RuboCop is a Ruby static code analyzer and formatter that helps maintain consistent code style and catch potential issues. Integrating it into your GitLab CI pipeline ensures that all code changes meet your project&rsquo;s quality standards before merging.</p>
+<h2 id="what-is-rubocop" class="headerLink">
+    <a href="#what-is-rubocop" class="header-mark"></a>What is RuboCop?</h2><p>RuboCop is a Ruby gem that:</p>
+<ul>
+<li>Enforces Ruby style guide conventions</li>
+<li>Detects potential bugs and code smells</li>
+<li>Provides automatic code formatting</li>
+<li>Integrates with popular editors and CI systems</li>
+<li>Supports custom rules and configurations</li>
+</ul>
+<h2 id="prerequisites" class="headerLink">
+    <a href="#prerequisites" class="header-mark"></a>Prerequisites</h2><p>Before setting up RuboCop in GitLab CI, ensure you have:</p>]]></description>
+</item><item>
     <title>How to Fix Incorrect Locale Warnings on Linux</title>
     <link>http://localhost:1313/how-to-fix-incorrect-locale-warnings-on-linux/</link>
     <pubDate>Fri, 13 Oct 2023 00:00:00 &#43;0000</pubDate><author>
@@ -121,128 +210,5 @@ For example, when we open a file in RubyMine, the same file could also be opened
           <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
           <p class="tw-select-none !tw-my-1">text</p>]]></description>
-</item><item>
-    <title>How to Start Docker Compose on Boot with systemd</title>
-    <link>http://localhost:1313/how-to-start-up-docker-compose-on-boot/</link>
-    <pubDate>Sun, 08 Oct 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-start-up-docker-compose-on-boot/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/docker-compose.jpg" referrerpolicy="no-referrer">
-            </div><h1 id="-how-to-start-docker-compose-on-boot-using-systemd" class="headerLink">
-    <a href="#-how-to-start-docker-compose-on-boot-using-systemd" class="header-mark"></a>🚀 How to Start Docker Compose on Boot Using systemd</h1><p>Want your Docker containers to start automatically on boot? Here’s a clean way to run Docker Compose projects as services with <code>systemd</code>.</p>
-<hr>
-<h2 id="-example-project-structure" class="headerLink">
-    <a href="#-example-project-structure" class="header-mark"></a>🛠 Example Project Structure</h2><p>Suppose your project is located at:</p>
-<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">text</p>]]></description>
-</item><item>
-    <title>How to Configure NFS Server and Client on Linux</title>
-    <link>http://localhost:1313/how-to-configure-nfs-server-client-linux/</link>
-    <pubDate>Sun, 01 Oct 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/how-to-configure-nfs-server-client-linux/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/how-to-configure-nfs-server-client-linux/how-to-configure-nfs-server-client.jpg" referrerpolicy="no-referrer">
-            </div><h1 id="-how-to-configure-nfs-server-and-client-on-linux" class="headerLink">
-    <a href="#-how-to-configure-nfs-server-and-client-on-linux" class="header-mark"></a>📁 How to Configure NFS Server and Client on Linux</h1><p>NFS (Network File System) is a protocol that allows file sharing between systems over a network. This guide shows you how to configure an <strong>NFS server</strong> and a <strong>client</strong> on Ubuntu-based systems.</p>
-<hr>
-<h2 id="-nfs-server-setup" class="headerLink">
-    <a href="#-nfs-server-setup" class="header-mark"></a>🖥️ NFS Server Setup</h2><h3 id="1-install-nfs-server" class="headerLink">
-    <a href="#1-install-nfs-server" class="header-mark"></a>1. Install NFS server</h3><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">bash</p>]]></description>
-</item><item>
-    <title>Postgres</title>
-    <link>http://localhost:1313/postgres/</link>
-    <pubDate>Mon, 07 Aug 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/postgres/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/posts/postgresql-logo.png" referrerpolicy="no-referrer">
-            </div><h3 id="install-postgresql" class="headerLink">
-    <a href="#install-postgresql" class="header-mark"></a>Install PostgreSql</h3><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">bash</p>]]></description>
-</item><item>
-    <title>Basic Authentication in Nginx — Protect Your Website with a Password</title>
-    <link>http://localhost:1313/basic-authentication-in-nginx-protect-your-website-with-a-password/</link>
-    <pubDate>Thu, 01 Jun 2023 00:00:00 &#43;0000</pubDate><author>
-                        <name>Alex</name><uri>https://rubydev.org</uri><email>alex@rubydev.org</email></author><guid>http://localhost:1313/basic-authentication-in-nginx-protect-your-website-with-a-password/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/basic-authentication-in-nginx-protect-your-website-with-a-password/basic-auth-nginx.webp" referrerpolicy="no-referrer">
-            </div><p>Sometimes you need to restrict access to specific areas of your website—such as an admin panel,
-staging environment, or internal documentation. One of the simplest ways to do this is by enabling
-<strong>Basic Authentication</strong> using <strong>Nginx</strong>. In this guide, you’ll learn how to set up password protection in just a few steps.</p>
-<h2 id="-nginx-configuration-example-with-basic-auth" class="headerLink">
-    <a href="#-nginx-configuration-example-with-basic-auth" class="header-mark"></a>🔧 Nginx Configuration Example with Basic Auth</h2><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">config</p>]]></description>
 </item></channel>
 </rss>

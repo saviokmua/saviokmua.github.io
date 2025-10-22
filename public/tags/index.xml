@@ -6,8 +6,106 @@
     <description>Recent content in Tags on RubyDev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frontend</title>
+      <link>http://localhost:1313/tags/frontend/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/frontend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hotwire</title>
+      <link>http://localhost:1313/tags/hotwire/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hotwire/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>http://localhost:1313/tags/javascript/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ruby on Rails</title>
+      <link>http://localhost:1313/tags/ruby-on-rails/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ruby-on-rails/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Turbo</title>
+      <link>http://localhost:1313/tags/turbo/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/turbo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>http://localhost:1313/tags/devops/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nginx</title>
+      <link>http://localhost:1313/tags/nginx/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nginx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Registry</title>
+      <link>http://localhost:1313/tags/registry/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/registry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Hosted</title>
+      <link>http://localhost:1313/tags/self-hosted/</link>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/self-hosted/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deployment</title>
+      <link>http://localhost:1313/tags/deployment/</link>
+      <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/deployment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitLab</title>
+      <link>http://localhost:1313/tags/gitlab/</link>
+      <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gitlab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kamal</title>
+      <link>http://localhost:1313/tags/kamal/</link>
+      <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/kamal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Private Gem</title>
+      <link>http://localhost:1313/tags/private-gem/</link>
+      <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/private-gem/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Compose</title>
       <link>http://localhost:1313/tags/compose/</link>
@@ -16,24 +114,10 @@
       <description></description>
     </item>
     <item>
-      <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Dockge</title>
       <link>http://localhost:1313/tags/dockge/</link>
       <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/dockge/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Self-Hosted</title>
-      <link>http://localhost:1313/tags/self-hosted/</link>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/self-hosted/</guid>
       <description></description>
     </item>
     <item>
@@ -135,6 +219,48 @@
       <description></description>
     </item>
     <item>
+      <title>CI/CD</title>
+      <link>http://localhost:1313/tags/ci/cd/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ci/cd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Code Quality</title>
+      <link>http://localhost:1313/tags/code-quality/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/code-quality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitLab CI</title>
+      <link>http://localhost:1313/tags/gitlab-ci/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gitlab-ci/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RuboCop</title>
+      <link>http://localhost:1313/tags/rubocop/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rubocop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ruby</title>
+      <link>http://localhost:1313/tags/ruby/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ruby/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Static Analysis</title>
+      <link>http://localhost:1313/tags/static-analysis/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/static-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Linux</title>
       <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
@@ -198,13 +324,6 @@
       <description></description>
     </item>
     <item>
-      <title>Mysql</title>
-      <link>http://localhost:1313/tags/mysql/</link>
-      <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mysql/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Auth</title>
       <link>http://localhost:1313/tags/auth/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
@@ -219,13 +338,6 @@
       <description></description>
     </item>
     <item>
-      <title>Devops</title>
-      <link>http://localhost:1313/tags/devops/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/devops/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Grafana</title>
       <link>http://localhost:1313/tags/grafana/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
@@ -233,24 +345,10 @@
       <description></description>
     </item>
     <item>
-      <title>Nginx</title>
-      <link>http://localhost:1313/tags/nginx/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nginx/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Password</title>
       <link>http://localhost:1313/tags/password/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/password/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Roundcubemail</title>
-      <link>http://localhost:1313/tags/roundcubemail/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/roundcubemail/</guid>
       <description></description>
     </item>
     <item>
