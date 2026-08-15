@@ -6,7 +6,7 @@ title: 'How to Compress qcow2 VM Images with virt-sparsify'
 slug: 'compress-qcow2-virt-sparsify'
 authors: ['Alex']
 enableReadingTime: true
-description: "Learn how to reduce qcow2 VM disk image size by freeing unused blocks with virt-sparsify. Real-world example showing 67% space reduction on Proxmox."
+description: "Learn how to reduce qcow2 VM disk image size by freeing unused blocks with virt-sparsify and qemu-img convert. Real-world example showing 67% space reduction on Proxmox."
 keywords: ['qcow2 compress', 'virt-sparsify', 'qcow2 optimization', 'proxmox disk space', 'vm disk compression', 'qemu-img']
 tags: ['qcow2', 'virt-sparsify', 'proxmox', 'vm', 'disk optimization']
 categories: ['DevOps']
@@ -87,7 +87,7 @@ In our case: the VM only uses about 5 GB of real data, but the qcow2 file holds 
 
 ## Step 4: If There's Waste — Run virt-sparsify
 
-If you see a gap between `disk size` and actual usage inside the VM, use `virt-sparsify` to reclaim the unused blocks.
+If you see a gap between `disk size` and actual usage inside the VM, use `virt-sparsify` to zero out the unused blocks.
 
 First, install the tool (on Proxmox host):
 
@@ -115,15 +115,54 @@ Sparsify in-place operation completed with no errors
 
 ---
 
-## Step 5: Verify the Result
+## Step 5: Check After virt-sparsify
 
-Check the image again:
+Check the image after sparsify:
 
 ```bash
 qemu-img info /vz/images/100/vm-100-disk-0.qcow2
 ```
 
-You now see:
+You see:
+
+```
+virtual size: 30 GiB
+disk size:    14.7 GiB
+```
+
+**The file size on disk did NOT change.** This is important.
+
+What `virt-sparsify --in-place` actually did — it zeroed out the unused blocks inside the qcow2 file. The file is still 14.7 GB, but now it contains lots of zero blocks. qcow2 doesn't automatically shrink when blocks are zeroed — it just marks them as sparse.
+
+To actually reduce the file size, you need the next step.
+
+---
+
+## Step 6: Run qemu-img convert to Actually Shrink the File
+
+Now convert the image to a fresh qcow2 file — this will skip the zeroed blocks and create a smaller file:
+
+```bash
+qemu-img convert -O qcow2 /vz/images/100/vm-100-disk-0.qcow2 /tmp/vm-100-new.qcow2
+```
+
+Wait for it to finish, then replace the original:
+
+```bash
+mv /tmp/vm-100-new.qcow2 /vz/images/100/vm-100-disk-0.qcow2
+```
+
+---
+
+## Step 7: Verify the Final Result
+
+Check the image one more time:
+
+```bash
+qemu-img info /vz/images/100/vm-100-disk-0.qcow2
+```
+
+Now you see:
 
 ```
 image: vm-100-disk-0.qcow2
@@ -149,6 +188,23 @@ Compare:
 | Space saved | — | ~9.85 GiB (67%) |
 
 The virtual size stayed the same — the VM still sees a 30 GB disk. But the physical footprint on the host dropped from 14.7 GB to 4.85 GB.
+
+---
+
+## The Full Workflow
+
+The complete process is two commands:
+
+```bash
+# Step 1: Zero out unused blocks inside the image
+virt-sparsify --in-place /vz/images/100/vm-100-disk-0.qcow2
+
+# Step 2: Re-create the qcow2 file, skipping zeroed blocks
+qemu-img convert -O qcow2 /vz/images/100/vm-100-disk-0.qcow2 /tmp/vm-100-new.qcow2 && \
+mv /tmp/vm-100-new.qcow2 /vz/images/100/vm-100-disk-0.qcow2
+```
+
+`virt-sparsify` alone does NOT reduce the file size — it only marks blocks as sparse. `qemu-img convert` is what actually creates the smaller file.
 
 ---
 
@@ -180,7 +236,7 @@ virtual size: 20 GiB (21474836480 bytes)
 disk size:    1.2 GiB
 ```
 
-VM 100 — clear candidate for sparsify. VM 102 — already optimized. Run `virt-sparsify` on each candidate following the same steps above.
+VM 100 — clear candidate for compression. VM 102 — already optimized. Run the two-step process on each candidate.
 
 Quick summary of total disk usage:
 
@@ -190,47 +246,13 @@ du -sh /vz/images/*/
 
 ---
 
-## Alternative: qemu-img convert
-
-There's another way to reclaim space — convert the image to a fresh qcow2 file:
-
-```bash
-qemu-img convert -O qcow2 /vz/images/100/vm-100-disk-0.qcow2 /tmp/vm-100-new.qcow2
-```
-
-Then replace the original:
-
-```bash
-mv /tmp/vm-100-new.qcow2 /vz/images/100/vm-100-disk-0.qcow2
-```
-
-What does this do? It reads the source image block by block and writes only the allocated blocks to a new file. Unused blocks are skipped. The result is a clean qcow2 without stale data.
-
-### When to use qemu-img convert
-
-- When `virt-sparsify` is not available or won't install
-- When you want a completely fresh qcow2 structure (e.g., after corruption)
-- When converting between formats (raw → qcow2, vmdk → qcow2)
-
-### When virt-sparsify is better
-
-| | virt-sparsify | qemu-img convert |
-|---|---|---|
-| Modifies in-place | Yes (`--in-place`) | No, creates a new file |
-| Requires free space | No | Yes, for the output file |
-| Speed | Faster | Slower (full copy) |
-| Additional savings after sparsify | — | Minimal |
-
-In our case, after `virt-sparsify` already reduced the image from 14.7 GB to 4.85 GB, running `qemu-img convert` won't give you significant additional savings. The sparsify operation already did the heavy lifting.
-
----
-
 ## Summary
 
-The workflow is simple:
+| Step | Command | What it does |
+|------|---------|--------------|
+| 1 | `virt-sparsify --in-place` | Zeroes out unused blocks inside qcow2 |
+| 2 | `qemu-img convert -O qcow2` | Creates a new, smaller qcow2 file |
 
-1. Check `qemu-img info` to see virtual vs disk size
-2. If disk size is much larger than actual data — run `virt-sparsify --in-place`
-3. Verify with `qemu-img info` again
+**Important:** `virt-sparsify` alone does NOT reduce the file size. You must run `qemu-img convert` after it to actually reclaim the space.
 
-One command, no data loss, your VMs keep working exactly as before.
+One command cleans the inside, the second command shrinks the file. Together they give you the full 67% reduction.
