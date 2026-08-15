@@ -190,17 +190,38 @@ du -sh /vz/images/*/
 
 ---
 
-## Should You Also Use qemu-img convert?
+## Alternative: qemu-img convert
 
-In most cases, no. After `virt-sparsify`:
+There's another way to reclaim space — convert the image to a fresh qcow2 file:
 
-```
-virtual size: 30 GiB
-disk size:    4.85 GiB
-compression:  zlib
+```bash
+qemu-img convert -O qcow2 /vz/images/100/vm-100-disk-0.qcow2 /tmp/vm-100-new.qcow2
 ```
 
-`qemu-img convert` might slightly reorganize the qcow2 structure, but won't give you significant additional savings. The sparsify operation already did the heavy lifting.
+Then replace the original:
+
+```bash
+mv /tmp/vm-100-new.qcow2 /vz/images/100/vm-100-disk-0.qcow2
+```
+
+What does this do? It reads the source image block by block and writes only the allocated blocks to a new file. Unused blocks are skipped. The result is a clean qcow2 without stale data.
+
+### When to use qemu-img convert
+
+- When `virt-sparsify` is not available or won't install
+- When you want a completely fresh qcow2 structure (e.g., after corruption)
+- When converting between formats (raw → qcow2, vmdk → qcow2)
+
+### When virt-sparsify is better
+
+| | virt-sparsify | qemu-img convert |
+|---|---|---|
+| Modifies in-place | Yes (`--in-place`) | No, creates a new file |
+| Requires free space | No | Yes, for the output file |
+| Speed | Faster | Slower (full copy) |
+| Additional savings after sparsify | — | Minimal |
+
+In our case, after `virt-sparsify` already reduced the image from 14.7 GB to 4.85 GB, running `qemu-img convert` won't give you significant additional savings. The sparsify operation already did the heavy lifting.
 
 ---
 
